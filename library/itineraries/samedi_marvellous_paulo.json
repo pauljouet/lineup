@@ -1,0 +1,486 @@
+{
+  "artists": [
+    {
+      "id": "e2b058eb-a374-42a1-9b54-665eb3b0ddf7",
+      "name": "lizy",
+      "stage": "Beach Stage",
+      "start": "2026-05-23T11:00:00.000Z",
+      "end": "2026-05-23T12:30:00.000Z"
+    },
+    {
+      "id": "582755e0-1a22-4570-b6f0-3d29f485572b",
+      "name": "AMRITA",
+      "stage": "Beach Stage",
+      "start": "2026-05-23T12:30:00.000Z",
+      "end": "2026-05-23T14:15:00.000Z"
+    },
+    {
+      "id": "2f9e1577-b513-44a2-97e7-d63446269647",
+      "name": "STEREOCLIP live",
+      "stage": "Beach Stage",
+      "start": "2026-05-23T14:15:00.000Z",
+      "end": "2026-05-23T16:00:00.000Z"
+    },
+    {
+      "id": "72e38ba5-601f-4a77-9a32-f26b9c74a4e1",
+      "name": "Ry x dj set",
+      "stage": "Beach Stage",
+      "start": "2026-05-23T16:00:00.000Z",
+      "end": "2026-05-23T18:00:00.000Z"
+    },
+    {
+      "id": "d8d05602-e13c-442c-b20e-7328d9f0110d",
+      "name": "KOROLOVA",
+      "stage": "Beach Stage",
+      "start": "2026-05-23T18:00:00.000Z",
+      "end": "2026-05-23T20:00:00.000Z"
+    },
+    {
+      "id": "fadbd9e3-68c4-4919-bd31-f8c40c785409",
+      "name": "MATHAME",
+      "stage": "Beach Stage",
+      "start": "2026-05-23T20:00:00.000Z",
+      "end": "2026-05-23T22:00:00.000Z"
+    },
+    {
+      "id": "d99c76a1-4e4b-4cf7-80de-b1c6e574a80e",
+      "name": "EMMA NEIL",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T11:00:00.000Z",
+      "end": "2026-05-23T12:00:00.000Z"
+    },
+    {
+      "id": "43185224-1e91-423d-8ce1-78ae5bca747b",
+      "name": "RIN LA DALLE",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T12:00:00.000Z",
+      "end": "2026-05-23T13:00:00.000Z"
+    },
+    {
+      "id": "eedc9fba-2efe-44b1-9e4c-2cf39605c544",
+      "name": "MARION DI NAPOLI",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T13:00:00.000Z",
+      "end": "2026-05-23T14:30:00.000Z"
+    },
+    {
+      "id": "6d3125f1-4c0b-46d5-a39b-41681c16137c",
+      "name": "CARA ELIZABETH b2b BEROU",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T14:30:00.000Z",
+      "end": "2026-05-23T16:30:00.000Z"
+    },
+    {
+      "id": "52e305a8-0ac2-4413-bc28-0ebbdc1176a2",
+      "name": "PANTEROS666",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T16:30:00.000Z",
+      "end": "2026-05-23T18:00:00.000Z"
+    },
+    {
+      "id": "86bed6ad-8ddc-4ea7-869f-85a15242a671",
+      "name": "BEN HEMSLEY",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T18:00:00.000Z",
+      "end": "2026-05-23T19:30:00.000Z"
+    },
+    {
+      "id": "8bda4599-3f84-4eec-b91d-966090f1c127",
+      "name": "AcidPauli live",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T19:30:00.000Z",
+      "end": "2026-05-23T20:30:00.000Z"
+    },
+    {
+      "id": "5809ee8e-8dc8-481f-a9d2-69a9a6b3ff1f",
+      "name": "REINIER ZONNEVELD live",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T20:30:00.000Z",
+      "end": "2026-05-23T22:00:00.000Z"
+    },
+    {
+      "id": "91816966-9ab0-4bd2-a44d-1fe59647994f",
+      "name": "VORTEK'S",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T22:00:00.000Z",
+      "end": "2026-05-23T23:15:00.000Z"
+    },
+    {
+      "id": "c844be62-d3fc-454e-94b5-af1cc49e4e67",
+      "name": "KX CHR",
+      "stage": "Digital Stage",
+      "start": "2026-05-23T23:15:00.000Z",
+      "end": "2026-05-24T00:45:00.000Z"
+    },
+    {
+      "id": "b14fb8a9-1440-4282-9163-e5b0c6870554",
+      "name": "CARLA SCHMITT",
+      "stage": "Digital Stage",
+      "start": "2026-05-24T00:45:00.000Z",
+      "end": "2026-05-24T02:00:00.000Z"
+    },
+    {
+      "id": "fd6de199-e700-4369-bc8e-a7e660026e16",
+      "name": "NIKOLINA",
+      "stage": "Digital Stage",
+      "start": "2026-05-24T02:00:00.000Z",
+      "end": "2026-05-24T03:00:00.000Z"
+    },
+    {
+      "id": "f534e56a-d0c3-40dc-8902-5aad04e51e14",
+      "name": "MO LAADJAL",
+      "stage": "La Kasbah",
+      "start": "2026-05-23T11:00:00.000Z",
+      "end": "2026-05-23T12:00:00.000Z"
+    },
+    {
+      "id": "9666e3ed-8149-4e46-a7ac-f917b4fbb1c7",
+      "name": "MOON",
+      "stage": "La Kasbah",
+      "start": "2026-05-23T12:00:00.000Z",
+      "end": "2026-05-23T13:30:00.000Z"
+    },
+    {
+      "id": "60f66e9e-b6f9-4d7f-a7c5-5587e2c26789",
+      "name": "CRÂNE DE POULE live",
+      "stage": "La Kasbah",
+      "start": "2026-05-23T13:30:00.000Z",
+      "end": "2026-05-23T15:15:00.000Z"
+    },
+    {
+      "id": "ab18138e-887e-4cb9-a2c7-10194706efe6",
+      "name": "LAURA DE GREEF",
+      "stage": "La Kasbah",
+      "start": "2026-05-23T15:15:00.000Z",
+      "end": "2026-05-23T17:00:00.000Z"
+    },
+    {
+      "id": "3e6512c4-37b0-4025-80bc-521b2eb14d97",
+      "name": "MIURA",
+      "stage": "La Kasbah",
+      "start": "2026-05-23T17:00:00.000Z",
+      "end": "2026-05-23T19:00:00.000Z"
+    },
+    {
+      "id": "6f767509-3b9b-496e-bcf9-c7ac997f507d",
+      "name": "MARSOLO",
+      "stage": "La Kasbah",
+      "start": "2026-05-23T19:00:00.000Z",
+      "end": "2026-05-23T21:00:00.000Z"
+    },
+    {
+      "id": "8f1b9b27-d4b8-4b91-95c3-477a47554cd4",
+      "name": "NIC FANCIULLI",
+      "stage": "La Kasbah",
+      "start": "2026-05-23T21:00:00.000Z",
+      "end": "2026-05-23T23:00:00.000Z"
+    },
+    {
+      "id": "01feae9d-f171-45cd-84ec-5ff4738a82d7",
+      "name": "DENNIS CRUZ",
+      "stage": "La Kasbah",
+      "start": "2026-05-23T23:00:00.000Z",
+      "end": "2026-05-24T01:00:00.000Z"
+    },
+    {
+      "id": "f638d346-47eb-441a-bc4f-d0add6c3d104",
+      "name": "IAMBACK",
+      "stage": "La Kasbah",
+      "start": "2026-05-24T01:00:00.000Z",
+      "end": "2026-05-24T03:00:00.000Z"
+    },
+    {
+      "id": "78e0daf5-8add-492d-9ab7-a7dcfc5e06f9",
+      "name": "SIBIL",
+      "stage": "La Pampa",
+      "start": "2026-05-23T11:00:00.000Z",
+      "end": "2026-05-23T13:30:00.000Z"
+    },
+    {
+      "id": "509b186a-0b7c-4c69-ac0d-13dde414fc8a",
+      "name": "POGGIO",
+      "stage": "La Pampa",
+      "start": "2026-05-23T13:30:00.000Z",
+      "end": "2026-05-23T15:00:00.000Z"
+    },
+    {
+      "id": "0b067ab7-234b-490c-937f-5a2a19a4511a",
+      "name": "DOUDOU MD",
+      "stage": "La Pampa",
+      "start": "2026-05-23T15:00:00.000Z",
+      "end": "2026-05-23T16:45:00.000Z"
+    },
+    {
+      "id": "e05575ef-1136-426e-9e62-2ef0384ad27e",
+      "name": "JANERET",
+      "stage": "La Pampa",
+      "start": "2026-05-23T16:45:00.000Z",
+      "end": "2026-05-23T18:30:00.000Z"
+    },
+    {
+      "id": "4c98685a-5250-451a-826d-a4615f8fefb6",
+      "name": "PAULA TAPE",
+      "stage": "La Pampa",
+      "start": "2026-05-23T18:30:00.000Z",
+      "end": "2026-05-23T20:30:00.000Z"
+    },
+    {
+      "id": "98d24a83-4169-41d7-8e24-494eaf330d4e",
+      "name": "NARCISS",
+      "stage": "La Pampa",
+      "start": "2026-05-23T20:30:00.000Z",
+      "end": "2026-05-23T22:30:00.000Z"
+    },
+    {
+      "id": "8cca32c3-dbfe-4d95-881b-9074c9bf7684",
+      "name": "KIROLLUS",
+      "stage": "La Pampa",
+      "start": "2026-05-23T22:30:00.000Z",
+      "end": "2026-05-24T02:00:00.000Z"
+    }
+  ],
+  "ratings": [
+    {
+      "artistId": "e2b058eb-a374-42a1-9b54-665eb3b0ddf7",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "582755e0-1a22-4570-b6f0-3d29f485572b",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "2f9e1577-b513-44a2-97e7-d63446269647",
+      "score": null,
+      "comment": ""
+    },
+    {
+      "artistId": "72e38ba5-601f-4a77-9a32-f26b9c74a4e1",
+      "score": 2,
+      "comment": "Trop chill"
+    },
+    {
+      "artistId": "d8d05602-e13c-442c-b20e-7328d9f0110d",
+      "score": 2,
+      "comment": "fraîche mais vrmt  edm un peu claquos"
+    },
+    {
+      "artistId": "fadbd9e3-68c4-4919-bd31-f8c40c785409",
+      "score": null,
+      "comment": ""
+    },
+    {
+      "artistId": "d99c76a1-4e4b-4cf7-80de-b1c6e574a80e",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "43185224-1e91-423d-8ce1-78ae5bca747b",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "eedc9fba-2efe-44b1-9e4c-2cf39605c544",
+      "score": 4,
+      "comment": "Style eurodance lent mais bouncy (mystical)"
+    },
+    {
+      "artistId": "6d3125f1-4c0b-46d5-a39b-41681c16137c",
+      "score": 4,
+      "comment": "Hard tech / Trance"
+    },
+    {
+      "artistId": "52e305a8-0ac2-4413-bc28-0ebbdc1176a2",
+      "score": 3,
+      "comment": "Pas une dingz non plus"
+    },
+    {
+      "artistId": "86bed6ad-8ddc-4ea7-869f-85a15242a671",
+      "score": 4,
+      "comment": "Cool, à tester, vibe 2010 un peu slow (trance / dance)"
+    },
+    {
+      "artistId": "8bda4599-3f84-4eec-b91d-966090f1c127",
+      "score": null,
+      "comment": ""
+    },
+    {
+      "artistId": "5809ee8e-8dc8-481f-a9d2-69a9a6b3ff1f",
+      "score": 2,
+      "comment": "trop vener"
+    },
+    {
+      "artistId": "91816966-9ab0-4bd2-a44d-1fe59647994f",
+      "score": null,
+      "comment": ""
+    },
+    {
+      "artistId": "c844be62-d3fc-454e-94b5-af1cc49e4e67",
+      "score": null,
+      "comment": ""
+    },
+    {
+      "artistId": "b14fb8a9-1440-4282-9163-e5b0c6870554",
+      "score": 3,
+      "comment": "hard tech"
+    },
+    {
+      "artistId": "fd6de199-e700-4369-bc8e-a7e660026e16",
+      "score": 4,
+      "comment": "Bonne hard tech pour finir"
+    },
+    {
+      "artistId": "f534e56a-d0c3-40dc-8902-5aad04e51e14",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "9666e3ed-8149-4e46-a7ac-f917b4fbb1c7",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "60f66e9e-b6f9-4d7f-a7c5-5587e2c26789",
+      "score": 4,
+      "comment": "Chill"
+    },
+    {
+      "artistId": "ab18138e-887e-4cb9-a2c7-10194706efe6",
+      "score": 5,
+      "comment": "Minimal / deep house Vraiment cool, pas attendre la fin de Cara"
+    },
+    {
+      "artistId": "3e6512c4-37b0-4025-80bc-521b2eb14d97",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "6f767509-3b9b-496e-bcf9-c7ac997f507d",
+      "score": 5,
+      "comment": "Deep house très lourd"
+    },
+    {
+      "artistId": "8f1b9b27-d4b8-4b91-95c3-477a47554cd4",
+      "score": 4,
+      "comment": "house groovy / minimal"
+    },
+    {
+      "artistId": "01feae9d-f171-45cd-84ec-5ff4738a82d7",
+      "score": null,
+      "comment": ""
+    },
+    {
+      "artistId": "f638d346-47eb-441a-bc4f-d0add6c3d104",
+      "score": 4,
+      "comment": "minimal très cool"
+    },
+    {
+      "artistId": "78e0daf5-8add-492d-9ab7-a7dcfc5e06f9",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "509b186a-0b7c-4c69-ac0d-13dde414fc8a",
+      "score": null,
+      "comment": ""
+    },
+    {
+      "artistId": "0b067ab7-234b-490c-937f-5a2a19a4511a",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "artistId": "e05575ef-1136-426e-9e62-2ef0384ad27e",
+      "score": 4,
+      "comment": "Minimal, Sympa mais très chill / phasant de ce que j'entends"
+    },
+    {
+      "artistId": "4c98685a-5250-451a-826d-a4615f8fefb6",
+      "score": null,
+      "comment": ""
+    },
+    {
+      "artistId": "98d24a83-4169-41d7-8e24-494eaf330d4e",
+      "score": 5,
+      "comment": "rien à dire de +"
+    },
+    {
+      "artistId": "8cca32c3-dbfe-4d95-881b-9074c9bf7684",
+      "score": 5,
+      "comment": "disco / house good vibes"
+    }
+  ],
+  "slots": [
+    {
+      "artistId": "d99c76a1-4e4b-4cf7-80de-b1c6e574a80e",
+      "from": "2026-05-23T11:00:00.000Z",
+      "to": "2026-05-23T12:00:00.000Z"
+    },
+    {
+      "artistId": "43185224-1e91-423d-8ce1-78ae5bca747b",
+      "from": "2026-05-23T12:00:00.000Z",
+      "to": "2026-05-23T13:00:00.000Z"
+    },
+    {
+      "artistId": "6d3125f1-4c0b-46d5-a39b-41681c16137c",
+      "from": "2026-05-23T14:30:00.000Z",
+      "to": "2026-05-23T15:05:00.000Z"
+    },
+    {
+      "artistId": "ab18138e-887e-4cb9-a2c7-10194706efe6",
+      "from": "2026-05-23T15:15:00.000Z",
+      "to": "2026-05-23T17:00:00.000Z"
+    },
+    {
+      "artistId": "6f767509-3b9b-496e-bcf9-c7ac997f507d",
+      "from": "2026-05-23T19:00:00.000Z",
+      "to": "2026-05-23T21:00:00.000Z"
+    },
+    {
+      "artistId": "98d24a83-4169-41d7-8e24-494eaf330d4e",
+      "from": "2026-05-23T21:10:00.000Z",
+      "to": "2026-05-23T22:30:00.000Z"
+    },
+    {
+      "artistId": "fd6de199-e700-4369-bc8e-a7e660026e16",
+      "from": "2026-05-24T02:10:00.000Z",
+      "to": "2026-05-24T03:00:00.000Z"
+    },
+    {
+      "artistId": "eedc9fba-2efe-44b1-9e4c-2cf39605c544",
+      "from": "2026-05-23T13:00:00.000Z",
+      "to": "2026-05-23T13:35:00.000Z"
+    },
+    {
+      "artistId": "60f66e9e-b6f9-4d7f-a7c5-5587e2c26789",
+      "from": "2026-05-23T13:45:00.000Z",
+      "to": "2026-05-23T14:30:00.000Z"
+    },
+    {
+      "artistId": "f638d346-47eb-441a-bc4f-d0add6c3d104",
+      "from": "2026-05-24T01:00:00.000Z",
+      "to": "2026-05-24T02:05:00.000Z"
+    },
+    {
+      "artistId": "8cca32c3-dbfe-4d95-881b-9074c9bf7684",
+      "from": "2026-05-23T22:30:00.000Z",
+      "to": "2026-05-24T00:50:00.000Z"
+    },
+    {
+      "artistId": "86bed6ad-8ddc-4ea7-869f-85a15242a671",
+      "from": "2026-05-23T18:10:00.000Z",
+      "to": "2026-05-23T18:50:00.000Z"
+    },
+    {
+      "artistId": "e05575ef-1136-426e-9e62-2ef0384ad27e",
+      "from": "2026-05-23T17:10:00.000Z",
+      "to": "2026-05-23T18:00:00.000Z"
+    }
+  ],
+  "config": {
+    "travelTimeMinutes": 10,
+    "minSlotMinutes": 20,
+    "displayThreshold": 3
+  }
+}

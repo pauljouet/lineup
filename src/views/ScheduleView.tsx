@@ -1,13 +1,41 @@
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import { useAppState, useDispatch, validateState } from '../state/store';
 import Timeline from '../components/Timeline';
+import { itineraryLibrary } from '../lib/library';
 import type { AppState } from '../state/types';
 
 export default function ScheduleView() {
   const state = useAppState();
   const dispatch = useDispatch();
   const importRef = useRef<HTMLInputElement>(null);
+  const [showItineraries, setShowItineraries] = useState(false);
   const { config, artists, slots } = state;
+
+  // Replace the whole plan with a saved state (imported file or library item).
+  const applyState = (text: string, label?: string) => {
+    let parsed: AppState | null;
+    try {
+      parsed = validateState(JSON.parse(text)) as AppState | null;
+    } catch {
+      alert('Could not parse JSON.');
+      return false;
+    }
+    if (!parsed) {
+      alert('Invalid file: shape did not match an exported state.');
+      return false;
+    }
+    if (
+      artists.length > 0 &&
+      !window.confirm(
+        `Replace your entire current plan${
+          label ? ` with “${label}”` : ''
+        }? This overwrites your timetable, ratings, and schedule.`,
+      )
+    )
+      return false;
+    dispatch({ type: 'REPLACE_STATE', state: parsed });
+    return true;
+  };
 
   const exportJson = () => {
     const blob = new Blob([JSON.stringify(state, null, 2)], {
@@ -24,15 +52,7 @@ export default function ScheduleView() {
   const onImport = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    file.text().then((text) => {
-      try {
-        const parsed = validateState(JSON.parse(text)) as AppState | null;
-        if (parsed) dispatch({ type: 'REPLACE_STATE', state: parsed });
-        else alert('Invalid file: shape did not match an exported state.');
-      } catch {
-        alert('Could not parse JSON file.');
-      }
-    });
+    file.text().then((text) => applyState(text));
     e.target.value = '';
   };
 
@@ -97,6 +117,35 @@ export default function ScheduleView() {
         </button>
 
         <div className="ml-auto flex gap-2">
+          <div className="relative">
+            <button
+              className="rounded border border-slate-600 px-3 py-1.5 text-sm hover:bg-slate-800 disabled:opacity-40"
+              disabled={itineraryLibrary.length === 0}
+              onClick={() => setShowItineraries((s) => !s)}
+              title={
+                itineraryLibrary.length === 0
+                  ? 'No itineraries in the library yet'
+                  : 'Load a shared itinerary'
+              }
+            >
+              Load itinerary ▾
+            </button>
+            {showItineraries && (
+              <div className="absolute right-0 z-20 mt-1 max-h-72 w-64 overflow-auto rounded border border-slate-600 bg-slate-800 p-1 shadow-xl">
+                {itineraryLibrary.map((entry) => (
+                  <button
+                    key={entry.id}
+                    className="block w-full truncate rounded px-2 py-1.5 text-left text-sm hover:bg-slate-700"
+                    onClick={() => {
+                      if (applyState(entry.content, entry.name)) setShowItineraries(false);
+                    }}
+                  >
+                    {entry.name}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           <button
             className="rounded border border-slate-600 px-3 py-1.5 text-sm hover:bg-slate-800"
             onClick={exportJson}

@@ -3,14 +3,8 @@ import { useAppState, useDispatch } from '../state/store';
 import { parseTimetableCsv } from '../lib/csv';
 import { toMs, toLocalInput, fromLocalInput } from '../lib/time';
 import { uuid } from '../lib/id';
+import { lineupLibrary } from '../lib/library';
 import type { Artist } from '../state/types';
-
-const SAMPLE = `stage,start,end,artist
-Main,2026-05-21 18:00,2026-05-21 19:00,Opener
-Main,2026-05-21 19:15,2026-05-21 20:30,Headliner A
-River,2026-05-21 18:30,2026-05-21 19:30,Indie Band
-River,2026-05-21 19:45,2026-05-21 21:00,Headliner B
-Tent,2026-05-21 18:45,2026-05-21 20:00,DJ Set`;
 
 export default function TimetableView() {
   const { artists } = useAppState();
@@ -22,6 +16,7 @@ export default function TimetableView() {
   const [days, setDays] = useState<string[]>([]);
   const [selectedDay, setSelectedDay] = useState<string | undefined>(undefined);
   const [rolloverHour, setRolloverHour] = useState(6);
+  const [showLibrary, setShowLibrary] = useState(false);
 
   const loadCsv = (
     text: string,
@@ -37,13 +32,27 @@ export default function TimetableView() {
     if (res.artists.length) dispatch({ type: 'SET_ARTISTS', artists: res.artists });
   };
 
+  // Load a fresh CSV (file or library). Loading replaces the timetable and
+  // resets ratings, so confirm when there's existing work to lose.
+  const applyCsv = (text: string, label?: string) => {
+    if (
+      artists.length > 0 &&
+      !window.confirm(
+        `Replace the current timetable${
+          label ? ` with “${label}”` : ''
+        }? Your ratings for the current lineup will be cleared.`,
+      )
+    )
+      return false;
+    setCsvText(text);
+    loadCsv(text);
+    return true;
+  };
+
   const onFile = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    file.text().then((text) => {
-      setCsvText(text);
-      loadCsv(text);
-    });
+    file.text().then((text) => applyCsv(text));
     e.target.value = '';
   };
 
@@ -81,15 +90,35 @@ export default function TimetableView() {
           className="hidden"
           onChange={onFile}
         />
-        <button
-          className="rounded border border-slate-600 px-3 py-1.5 text-sm hover:bg-slate-800"
-          onClick={() => {
-            setCsvText(SAMPLE);
-            loadCsv(SAMPLE);
-          }}
-        >
-          Load sample
-        </button>
+        <div className="relative">
+          <button
+            className="rounded border border-slate-600 px-3 py-1.5 text-sm hover:bg-slate-800 disabled:opacity-40"
+            disabled={lineupLibrary.length === 0}
+            onClick={() => setShowLibrary((s) => !s)}
+            title={
+              lineupLibrary.length === 0
+                ? 'No lineups in the library yet'
+                : 'Load a lineup from the library'
+            }
+          >
+            Load from library ▾
+          </button>
+          {showLibrary && (
+            <div className="absolute z-20 mt-1 max-h-72 w-64 overflow-auto rounded border border-slate-600 bg-slate-800 p-1 shadow-xl">
+              {lineupLibrary.map((entry) => (
+                <button
+                  key={entry.id}
+                  className="block w-full truncate rounded px-2 py-1.5 text-left text-sm hover:bg-slate-700"
+                  onClick={() => {
+                    if (applyCsv(entry.content, entry.name)) setShowLibrary(false);
+                  }}
+                >
+                  {entry.name}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
         <button
           className="rounded border border-slate-600 px-3 py-1.5 text-sm hover:bg-slate-800"
           onClick={() => {
