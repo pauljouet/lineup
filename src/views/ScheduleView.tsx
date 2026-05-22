@@ -180,8 +180,8 @@ export default function ScheduleView() {
           travel too tight
         </span>
         <span className="basis-full">
-          Click a set to attend it (or drop it) · drag the bright block to shift ·
-          drag its top/bottom edges to trim arrival/leave · snaps to 5 min, stays within the set
+          Tap a set to attend it (or drop it) · to trim arrival/leave, hold an edge handle
+          (it brightens) then drag · snaps to 5 min, stays within the set
         </span>
         <span className="basis-full">
           Rating (★) shows on every set. Click the ⓘ button (top-right of a set) to
